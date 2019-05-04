@@ -1,6 +1,7 @@
 from discord.ext import commands
 import discord
 from discord import Role as DiscordRole, Embed as DiscordEmbed
+from discord import TextChannel
 from neo4j_connection import \
     Graph, TicketMixin, ResponseMixin, GuildMixin, UserMixin, WarningMixin, KickMixin, BanMixin, ReportMixin
 from py2neo.ogm import GraphObject
