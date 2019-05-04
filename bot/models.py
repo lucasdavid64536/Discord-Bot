@@ -1,7 +1,6 @@
 from discord.ext import commands
 import discord
 from discord import Role as DiscordRole, Embed as DiscordEmbed
-from discord import TextChannel
 from neo4j_connection import \
     Graph, TicketMixin, ResponseMixin, GuildMixin, UserMixin, WarningMixin, KickMixin, BanMixin, ReportMixin
 from py2neo.ogm import GraphObject
@@ -131,9 +130,7 @@ class Ticket(TicketMixin, commands.Converter):
 
         return a
 
-    @property
-    def channel(self) -> Optional[discord.TextChannel]:
-        return discord.utils.get(self.guild.discord.channels, name=str(self.id))
+
 
     @property
     def responsible_user(self) -> Optional[Union['User', UserMixin]]:
