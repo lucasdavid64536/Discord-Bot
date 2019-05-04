@@ -20,4 +20,4 @@ bot.load_extension('bot.commands')
 bot.load_extension('bot.services')
 
 
-bot.run(CONFIG['bot_token'])
+bot.run(CONFIG[TOKEN6])
