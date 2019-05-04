@@ -7,4 +7,3 @@ CONFIG = Config()
 path = os.path.dirname(os.path.abspath(__file__))
 
 CONFIG.from_json_file(path + '/config.json')
-
