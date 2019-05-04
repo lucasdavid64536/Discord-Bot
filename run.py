@@ -1,6 +1,7 @@
 from bot import Bot, CONFIG, logger, dynamic_prefix
 import logging
 import sys
+import discord
 
 
 logger.setLevel(logging.DEBUG)
